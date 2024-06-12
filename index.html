@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" 
+  href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" 
+  rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+  integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+  <link rel="stylesheet" href="styles/output.css">
+
+  <title> POKÉVET   </title>
+
+</head>
+<body>
+   
+
+<!-- INICIO HEADER -->
+  <header class="w-full h-[420px] bg-cover bg-center"> 
+    <div class="w-full h-full flex flex-col justify-center items-center">
+      <img 
+      src="./assets/WhatsApp Image 2024-06-11 at 00.47.22.jpeg" 
+      alt="POKEVET"
+      class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+      />
+      <h1 class=" text-4xl mt-4 mb-2 font-bold text-yellow-400">
+        O SEU PET-SHOP POKÉMON
+      </h1>
+
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+        <span class="text-yellow-400 font-medium">Seg á Sab - 08:00 as 22:00</span>
+      </div>
+
+      <div id="PK">
+        <video loop autoplay muted>
+          <source src="./video/PK.mp4" type="video/mp4" >
+          </video>
+        </div>
+
+    </div>   
+
+  </header>
+  <!-- FIM HEADER -->
+
+
+  <div>
+  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    Conheça nossos Pokémons
+  </h2>
+  </div>
+
+<!-- INICIO MENU -->
+<div id="menu">
+
+  <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+      <img 
+      src="./assets/Bulbasaur.jpeg" 
+      alt="Bulbasaur"
+      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+      />
+
+      <div>
+          <p class="font-bold">Bulbasaur</p>
+          <p class="text-sm">Já o seu nome de origem norte-americana, Bulbasaur, vem de bulbo (bulba) e dinossauro (saur). 
+          Bulbasaur é um anfíbio quadrúpede, de coloração verde-água claro e com algumas manchas verde-água escuro. 
+          Contém um bulbo em suas costas, que tem um formato muito parecido com uma cebola.</p>
+      
+        </div>
+      
+        <div class="flex items-center gap-2 justify-between nt-3">
+          <p class="font-bold text-lg">R$ 18.90</p>
+          <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Bulbasaur"
+            data-price="18.90"
+            >
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+
+    </div>
+    <!-- FIM PRODUTO ITEM -->
+
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+      <img 
+      src="./assets/Charmander.jpeg" 
+      alt="Charmande"
+      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+      />
+
+      <div>
+          <p class="font-bold">Charmander</p>
+          <p class="text-sm">Conhecido como Hitokage (ヒトカゲ) no Japão, é um espécie de pokémon da franquia Pokémon da Nintendo e da Game Freak. 
+          Criado por Atsuko Nishida, Charmander apareceu pela primeira vez no videogame Pokémon Red e Blue e subsequentes, mais tarde aparecendo em vários jogos da franquia.</p>
+      
+        </div>
+      
+        <div class="flex items-center gap-2 justify-between nt-3">
+          <p class="font-bold text-lg">R$ 32.90</p>
+          <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Charmander"
+            data-price="32.90"
+            >
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+
+    </div>
+    <!-- FIM PRODUTO ITEM -->
+
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+      <img 
+      src="./assets/Cubone.jpeg" 
+      alt="Charmande"
+      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+      />
+
+      <div>
+          <p class="font-bold">Cubone</p>
+          <p class="text-sm">Conhecido como o Pokémon Solitário, parece ser um Pokémon pequeno, marrom, semelhante a um dinossauro, 
+          que constantemente usa o crânio de sua falecida mãe como um capacete. 
+          Esse pequeno já arrancou muitas lágrimas dos fãs do anime.</p>
+      
+        </div>
+      
+        <div class="flex items-center gap-2 justify-between nt-3">
+          <p class="font-bold text-lg">R$ 35.90</p>
+          <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Cubone"
+            data-price="35.90"
+            >
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+
+    </div>
+    <!-- FIM PRODUTO ITEM -->
+
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+      <img 
+      src="./assets/Mankey.jpeg" 
+      alt="Charmande"
+      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+      />
+
+      <div>
+          <p class="font-bold">Mankey</p>
+          <p class="text-sm">É um Pokémon do tipo Lutador introduzido na Primeira Geração.
+          Quando Mankey começa a tremer e seu nariz fica vermelho, é um claro sinal de que ele está ficando nervoso. 
+          No entando, como ele atinge um nível altíssimo de raiva quase que instantaneamente, é impossível para qualquer um fugir de sua ira.
+          </p>
+      
+        </div>
+      
+        <div class="flex items-center gap-2 justify-between nt-3">
+          <p class="font-bold text-lg">R$ 38.90</p>
+          <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Mankey"
+            data-price="38.90"
+            >
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+
+    </div>
+    <!-- FIM PRODUTO ITEM -->
+
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+      <img 
+      src="./assets/Psyduck.jpeg" 
+      alt="Charmande"
+      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+      />
+
+      <div>
+          <p class="font-bold">Psyduck</p>
+          <p class="text-sm">É um Pokémon amarelo que se assemelha a um pato ou ornitorrinco. 
+          Ele é constantemente atordoado por sua dor de cabeça e é incapaz de pensar com muita clareza. 
+          Geralmente fica imóvel, tentando se acalmar.
+          </p>
+      
+        </div>
+      
+        <div class="flex items-center gap-2 justify-between nt-3">
+          <p class="font-bold text-lg">R$ 42.90</p>
+          <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Psyduck"
+            data-price="42.90"
+            >
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+
+    </div>
+    <!-- FIM PRODUTO ITEM -->
+
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+      <img 
+      src="./assets/Squirtle.jpeg" 
+      alt="Charmande"
+      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+      />
+
+      <div>
+          <p class="font-bold">Squirtle</p>
+          <p class="text-sm">É um Pokémon do Tipo Water ( também conhecido como Tipo Água, é um dos dezoito tipos de Pokémon ). Squirtle é um dos três Pokémon iniciais de Kanto, assim como Bulbasaur e Charmander.
+          </p>
+      
+        </div>
+      
+        <div class="flex items-center gap-2 justify-between nt-3">
+          <p class="font-bold text-lg">R$ 45.90</p>
+          <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Squirtle"
+            data-price="45.90"
+            >
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+
+    </div>
+    <!-- FIM PRODUTO ITEM -->
+
+
+  </main>
+
+    <div class="mx-auto max-w-7xl px-2 my-2">
+    <h2 class="font-bold text-3xl">
+      Pokebolas
+    </h2>
+</div>
+
+<!-- GRID POKEBOLAS -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+  <!-- POKEBOLA ITEM -->
+  <div class="flex gap-2 w-full">
+    <img 
+    src="./assets/Pokebola Basic.jpeg" 
+    alt="Charmande"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    />
+
+    <div class="w-full">
+        <p class="font-bold">Pokebola Basic</p>
+        <p class="text-sm">Podem ser compradas no market de qualquer cidade. 
+          Ao comprar 100x Poké Ball o jogador ganhará 10x Premier Ball. 
+          Outra maneira de se obter Pokébolas é através do login diário. 
+          Além isso também é possível conseguir Pokébolas através da mastery.
+        </p>
+    
+      </div>
+    
+      <div class="flex items-center gap-2 justify-between nt-3">
+        <p class="font-bold text-lg">R$ 52.90</p>
+        <button 
+          class="bg-gray-900 px-5 rounded add-to-cart-btn"
+          data-name="Pokebola Basic"
+          data-price="52.90"
+          >
+          <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+      </div>
+
+  </div>
+  <!-- FIM POKEBOLA ITEM -->
+
+  <!-- POKEBOLA ITEM -->
+  <div class="flex gap-2 w-full">
+    <img 
+    src="./assets/Pokebola Master.jpeg" 
+    alt="Charmande"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    />
+
+    <div class="w-full">
+        <p class="font-bold">Pokebola Master</p>
+        <p class="text-sm">Ela é dada ao vencedor da liga, em sorteios de loteria ou em concursos. A captura é 100% garantida.
+          Além de ser usada para capturar pokémons selvagens em geral, sem falhas, basta atirá-la sobre o pokémon que ele será capturado.
+        </p>
+    
+      </div>
+    
+      <div class="flex items-center gap-2 justify-between nt-3">
+        <p class="font-bold text-lg">R$ 55.90</p>
+        <button 
+          class="bg-gray-900 px-5 rounded add-to-cart-btn"
+          data-name="Pokebola Master"
+          data-price="55.90"
+          >
+          <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+      </div>
+
+  </div>
+  <!-- FIM POKEBOLA ITEM -->
+
+</div>
+<!-- FIM GRID POKEBOLAS -->
+
+</div>
+<!-- FIM MENU -->
+
+
+<!-- MODAL CART -->
+ <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+ id="cart-modal"
+ >
+
+  <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+    <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+     
+    <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+    <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+    <p class="font-bold mt-4">Endereço de entrega:</p>
+    <input 
+    type="text"
+    placeholder="Digite seu endereço completo..."
+    id="address"
+    class="w-full border-2 p-1 rounded my-1"
+    />
+    <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+    <div class="flex items-center justify-between mt-5 w-full">
+      <button id="close-modal-btn">Fechar</button>
+      <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+    </div>
+
+
+
+  </div>
+
+ </div>
+<!-- FIM MODAL CART -->
+
+
+
+
+
+<!-- BUTTON CART FOOTER -->
+  <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex itens-center justify-center">
+    <button 
+    class="flex itens-center gap-2 text-white font-bold"
+    id="cart-btn"
+
+    >
+        (<samp id="cart-count">0</samp>)
+        Veja meu carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+<!-- FIM BUTTON CART FOOTER -->
+
+
+<script type="text/javascript" 
+src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

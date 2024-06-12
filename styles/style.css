@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #f6f7f8;
+}
+
+
+#PK{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 200%;
+    height: 130%;
+  
+
+  }
+  
+
+ 
+  #PK video {
+    width: 100%;
+    height: 35%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    
+  }
+  
+  #PK::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    inset: 0;
+    
+  }
+
+
+
